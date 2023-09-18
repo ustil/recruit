@@ -1,4 +1,3 @@
-import { handle } from '@hono/node-server/vercel'
 import { PrismaClient } from '@prisma/client'
 import { Hono } from 'hono'
 
@@ -47,4 +46,4 @@ app.put('/students', async (c) => {
   return c.text('', 200)
 })
 
-export default handle(app)
+export default app
