@@ -1,8 +1,9 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "lib": ["ESNext"],
+    "module": "esnext",
     "target": "esnext",
+    "moduleResolution": "bundler",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
     "noEmit": true,
@@ -12,6 +13,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["bun-types"]
   }
 }

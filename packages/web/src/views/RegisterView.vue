@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import 'simpledotcss'
 import { ref } from 'vue'
+
 const name = ref('')
 const id = ref('')
 const school = ref('')

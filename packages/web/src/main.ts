@@ -1,5 +1,4 @@
 import { createPinia } from 'pinia'
-import 'simpledotcss'
 import { createApp } from 'vue'
 
 import App from './App.vue'

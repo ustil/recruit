@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import { Hono } from 'hono'
 
-interface Student {
+export interface Student {
   id: string
   name: string
   school: string
@@ -40,7 +40,7 @@ app.put('/students', async (c) => {
     prisma.student.update({
       where: { id: student.id },
       data: student,
-    })
+    }),
   )
   await Promise.all(execution)
   return c.text('', 200)
