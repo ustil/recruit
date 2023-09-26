@@ -11,6 +11,10 @@ const router = createRouter({
       path: '/review',
       component: () => import('../views/ReviewView.vue'),
     },
+    {
+      path: '/query',
+      component: () => import('../views/QueryView.vue'),
+    },
   ],
 })
 

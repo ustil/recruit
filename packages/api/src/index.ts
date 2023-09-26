@@ -6,9 +6,9 @@ export interface Student {
   name: string
   school: string
   major: string
-  score?: number
-  isPassed?: boolean
-  note?: string
+  score: number | null
+  isPassed: boolean | null
+  note: string | null
 }
 
 const prisma = new PrismaClient()
